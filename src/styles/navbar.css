@@ -1,0 +1,95 @@
+
+/* Fondo negro mate para la navbar */
+.navbar {
+    background-color: #121212; /* Fondo negro mate */
+    border-bottom: 1px solid #333; /* Línea sutil debajo de la navbar */
+}
+
+/* Asegurar que los elementos de la navbar también sean visibles en el fondo oscuro */
+.navbar-brand, .nav-link, .navbar-button {
+    color: #fff !important; /* Texto blanco para el contraste */
+}
+
+.navbar-button:hover {
+    background-color: #ffcc00; /* Resalta el botón con color amarillo en hover */
+    color: black; /* Texto negro para mejor legibilidad */
+}
+
+body {
+    padding-top: 10px; /* Ajusta el valor según la altura de tu Navbar */
+}
+
+
+/* Efecto de fade-in para el logo */
+.navbar-logo {
+    height: 50px;
+    opacity: 0;
+    /* Inicia transparente */
+    animation: fadeIn 3s ease-in-out forwards, glow 2s infinite alternate;
+    /* Fade-in y glow */
+}
+
+/* Efecto de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efecto de brillo alrededor del logo */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+
+    to {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* Transición suave para el botón y enlaces */
+.navbar-button {
+    transition: all 0.3s ease;
+    background-color: #001f3f;
+    border: none;
+    
+}
+
+/* Efecto hover en el botón de favoritos */
+.navbar-button:hover {
+    background-color: #ffcc00;
+    /* Cambia a un amarillo brillante */
+    color: #000;
+    transform: scale(1.1);
+    /* Agranda ligeramente el botón */
+    
+}
+
+/* Agrega un efecto de transición para todo el navbar */
+.navbar-animated {
+    animation: slideIn 1s ease-in-out;
+   /* background-image: url('https://img.freepik.com/foto-gratis/fondo-hiperespacial-3d-efecto-tunel-urdimbre_1048-12526.jpg?t=st=1726876996~exp=1726880596~hmac=a6c9e32d31ab64d8d5506a359890fe3b6884927238f25270517fe50aba3a1167&w=826');
+    */
+    
+
+}
+
+/* Efecto de deslizamiento hacia abajo */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    justify-content: space-around;
+    
+}

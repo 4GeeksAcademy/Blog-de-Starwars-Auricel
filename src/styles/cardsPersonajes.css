@@ -1,0 +1,6 @@
+/* styles.css o dentro de tus estilos globales */
+.caja{
+    display: flex;
+    flex-wrap: wrap;
+}
+

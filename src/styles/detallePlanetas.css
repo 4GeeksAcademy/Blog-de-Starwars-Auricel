@@ -1,0 +1,22 @@
+.card-detalle{
+    margin-top: 10%;
+    margin-left: 15%;
+    background-color: aliceblue;
+    
+}
+
+.h5 {
+    font-size: 3rem;
+}
+
+.table {
+    margin-top: 5%;
+    border-color: red;
+   
+  
+}
+
+.p {
+    margin-top: 8%;
+    font-size: 2rem;
+}

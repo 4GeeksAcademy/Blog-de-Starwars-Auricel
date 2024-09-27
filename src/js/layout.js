@@ -9,6 +9,11 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { CardsPersonajes  }  from "./component/cardsPersonajes"; 
+import { DetallePersonajes } from "./views/detallePersonajes";
+import { DetallePlanetas } from "./views/detallePlanetas";
+import { DetalleVehiculo } from "./views/detalleVehiculo";
+
 
 //create your first component
 const Layout = () => {
@@ -17,15 +22,23 @@ const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div>
+		<div style={{
+			backgroundColor: '#121212', /* Fondo negro mate */
+			backgroundSize: 'cover',
+			backgroundPosition: 'center',
+			backgroundAttachment: 'fixed',
+			minHeight: '100vh'
+		}}>
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Navbar />
 					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/demo" element={<Demo />} />
+						<Route path="/" element={<Home />} />						
 						<Route path="/single/:theid" element={<Single />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
+						<Route path="/personaje/:uid" element={<DetallePersonajes />} />
+						<Route path="/planeta/:uid" element={<DetallePlanetas />} />
+						<Route path="/vehiculo/:uid" element={<DetalleVehiculo />} />
 					</Routes>
 					<Footer />
 				</ScrollToTop>
