@@ -4,6 +4,23 @@
 }
 
 .container {
+    
     margin: 0px;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 70%; /* Puedes ajustar la altura según sea necesario */
+    object-fit: cover; /* Mantendrá la proporción de la imagen */
+ }
+
+ .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+     /* Centra las tarjetas horizontalmente */
+}
+
+.caja {
+    flex: 1 1 200px; /* Ajusta el tamaño mínimo de las tarjetas */
+    margin: 10px;
+}

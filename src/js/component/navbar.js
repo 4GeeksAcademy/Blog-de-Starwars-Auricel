@@ -45,7 +45,8 @@ export const Navbar = () => {
                                                 onClick={(e) => {
                                                     e.preventDefault(); // Evita que el link se active
                                                     e.stopPropagation(); // Evita que otros eventos se disparen
-                                                    actions.añadirFavoritos(favorito);
+                                                    actions.añadirEliminarFavoritos(favorito);
+                                                    
                                                 }}
                                                 style={{ cursor: "pointer", color: "red" }}
                                             ></i>

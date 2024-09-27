@@ -12,10 +12,10 @@ export const Home = () => {
 	console.log(store.planets) 
 
 	return (
-		<div className="text-center mt-5 container-fluid main-content">
+		<div className="text-center mt-4 container-fluid main-content">
 			<h1>PERSONAJES</h1>
 			<div className="container">
-				<div className="justify-content-between row mb-5">
+				<div className="justify-content-between row md-4">
 					{
 						store.people.map((personaje) => {
 							return (<CardsPersonajes
@@ -32,7 +32,7 @@ export const Home = () => {
 
 			<h1>PLANETAS</h1>
 			<div className="container">
-				<div className="justify-content-between row mb-5">
+				<div className="justify-content-between row md-4">
 					{
 						store.planets.map((planeta)=>{
 							return (
@@ -50,8 +50,8 @@ export const Home = () => {
 			</div>
 
 			<h1>VEHICULO</h1>
-			<div className="container">
-				<div className="justify-content-between row mb-5">
+			<div className="container ">
+				<div className="justify-content-between row md-4">
 				{
 						store.vehicles.map((vehiculo)=>{
 							return (
